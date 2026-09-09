@@ -12,4 +12,11 @@ h1{
     height: 100px;
     background-color: brown;
     margin:auto;
+
+   display: grid;
+   justify-content: center; 
+   align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+
 }
