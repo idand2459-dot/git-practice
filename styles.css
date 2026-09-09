@@ -12,6 +12,7 @@ h1{
     height: 100px;
     background-color: brown;
     margin:auto;
+    transition: width 1s, height 1s;
 
    display: grid;
    justify-content: center; 
