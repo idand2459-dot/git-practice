@@ -64,3 +64,7 @@ function onFifthBallClick(){
 
     document.body.style.backgroundColor=getRandomColor();
 }
+
+function onSixBallClick(){
+    location.reload();
+}
