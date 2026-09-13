@@ -40,4 +40,23 @@ function onThirdBallClick() {
     elball2.innerText = tempText;
 }
 
+
+function onFourthBallClick() {
+    let elBalls = [document.querySelector('.ball1'), document.querySelector('.ball2')];
+    let randomNum = getRandomIntInt(20, 60);
+
+    for (let i = 0; i < elBalls.length; i++) {
+        let elBall = elBalls[i];
+        let currentSize = parseInt(elBall.style.width) || 100;
+        let newSize = currentSize - randomNum;
+
+        if (newSize < 100) {
+            newSize = 100; 
+        }
+
+        elBall.style.width = newSize + 'px';
+        elBall.style.height = newSize + 'px';
+        elBall.innerText = newSize;
+    }
+}
     
