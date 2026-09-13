@@ -60,3 +60,7 @@ function onFourthBallClick() {
     }
 }
     
+function onFifthBallClick(){
+
+    document.body.style.backgroundColor=getRandomColor();
+}
