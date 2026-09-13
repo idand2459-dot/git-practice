@@ -15,7 +15,7 @@ h1{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin: 15px; /* מוסיף רווח בין הכדורים שיראו את שניהם ברור */
+    margin: 15px; 
     transition: width 1s, height 1s;
 
     display: flex;
@@ -24,4 +24,32 @@ h1{
     font-weight: bold;
     font-size: 22px;
     cursor: pointer;
+}
+
+/* עיצוב לכפתורי ה-Undo וה-Redo */
+button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #555;
+}
+
+/* עיצוב לכפתורים כשהם במצב מושבת (disabled) */
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* עיצוב לטיימר */
+#timer {
+    color: white;
+    font-size: 18px;
 }
