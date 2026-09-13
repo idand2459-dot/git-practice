@@ -1,5 +1,5 @@
 function onBallClick(elBall, maxDiameter) {
-    console.log('elBall received:', elBall); // נוודא שהוא מקבל את הכדור
+    console.log('elBall received:', elBall); 
     
     const currentSize = parseInt(elBall.style.width) || 100;
     let randomNum = getRandomIntInt(20, 60);
@@ -14,4 +14,30 @@ function onBallClick(elBall, maxDiameter) {
     elBall.style.height = newSize + 'px';
     elBall.style.backgroundColor = randomColor;
     elBall.innerText = newSize;
+
 }
+
+function onThirdBallClick() {
+    let elball1 = document.querySelector('.ball1');
+    let elball2 = document.querySelector('.ball2');
+
+
+    let tempWidth = elball1.style.width;
+    let tempHeight = elball1.style.height;
+    let tempBgColor = elball1.style.backgroundColor;
+    let tempText = elball1.innerText;
+
+
+    elball1.style.width = elball2.style.width;
+    elball1.style.height = elball2.style.height;
+    elball1.style.backgroundColor = elball2.style.backgroundColor;
+    elball1.innerText = elball2.innerText;
+
+
+    elball2.style.width = tempWidth;
+    elball2.style.height = tempHeight;
+    elball2.style.backgroundColor = tempBgColor;
+    elball2.innerText = tempText;
+}
+
+    
