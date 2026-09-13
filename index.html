@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The awesome Ball Game</title>
+    <title>The Ball Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>The Ball Game</h1>
-    <div class="ball1" style="background-color: red;" onclick="onBallClick(this, 400)">100</div>
-<div class="ball2" style="background-color: blue;" onclick="onBallClick(this, 300)">100</div>
-<div class="ball3" style="background-color: green;" onclick="onThirdBallClick()">100</div>
-<div class="ball4" style="background-color: yellow;" onclick="onFourthBallClick()">100</div>
-<div class="ball5" style="background-color: purple;" onclick="onFifthBallClick()">5</div>
-<div class="ball6" style="background-color: orange;" onclick="onSixBallClick()">6</div>
-  
-  
+
+    <div class="ball1" style="background-color: red; width: 100px; height: 100px;" onclick="onBallClick(this, 400)">100</div>
+    <div class="ball2" style="background-color: blue; width: 100px; height: 100px;" onclick="onBallClick(this, 300)">100</div>
+    <div class="ball3" style="background-color: green; width: 100px; height: 100px;" onclick="onThirdBallClick()">100</div>
+    <div class="ball4" style="background-color: yellow; width: 100px; height: 100px;" onclick="onFourthBallClick()">100</div>
+    <div class="ball5" style="background-color: purple; width: 100px; height: 100px;" onclick="onFifthBallClick()">5</div>
+    <div class="ball6" style="background-color: orange; width: 100px; height: 100px;" onclick="onSixBallClick()" onmouseenter="onSixthBallMouseEnter()" onmouseleave="onSixthBallMouseLeave()">6</div>
 
     <script src="util.js"></script>
     <script src="main.js"></script>
